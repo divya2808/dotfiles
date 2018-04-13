@@ -1,0 +1,61 @@
+alias k="clear"
+alias x="exit"
+alias q="exit"
+alias :q="exit"
+alias ltr="ls -ltr"
+alias vi=vim # prefer vim to vi
+alias rm=trash # safer deleting using trash-cli
+alias dump="empty-trash"
+alias please=sudo # nicer sudo
+alias resource="source ~/.zshrc"
+alias ip="getip" # shorter alias for getip() function in .functions setup
+alias bbd="brew bundle dump --force" # homebrew bundle
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
+# Git
+alias g="git"
+alias gmm="git merge master"
+alias gf="git fetch --all --prune"
+alias gl="git pull"
+alias gd="git diff"
+alias ga="git add"
+alias gp="git push"
+alias gbx="git branch -D"
+alias gco="git checkout"
+alias gbc="git checkout -b"
+alias gcm="git checkout master"
+alias glm="git checkout master && git pull"
+alias glmm="pull_and_merge_master"
+alias gcam="git commit -am"
+alias gcmsg="git commit --message"
+alias gs="git status"
+alias gba="git branch --all"
+alias glg="git log --graph --decorate --pretty=oneline --abbrev-commit --all"
+alias gconflicts="git diff --name-only --diff-filter=U"
+alias gpub="publish_current_branch"
+alias gbam="delete_local_merged_branches"
+alias gbamr="delete_remote_merged_branches"
+alias gclean="delete_local_merged_branches && delete_remote_merged_branches"
+alias gopen="open_git_repo_online"
+
+# NPM
+alias ni="npm install"
+alias use_npm="npm set registry https://registry.npmjs.org/ && npm get registry"
+alias use_wwt="npm set registry https://npm.wwt.com/ && npm get registry"
+alias nr="npm run"
+
+# start screensaver
+alias afk="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+# get current weather
+alias weather="curl wttr.in"
+
+# VS Code
+alias vsc="code ."
+
+#zsh
+alias reload="source ~/.zshrc"
