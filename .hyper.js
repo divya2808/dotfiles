@@ -44,7 +44,7 @@ module.exports = {
     css: `li.tab-active{border-bottom: 1px solid #fac863 !important}`,
 
     // custom css to embed in the terminal window
-    termCSS: `x-row{height: 14px; line-height: 1.2;} .unicode-node{font-size: 10px; padding: 2px 0;} .cursor-node[style]{background-color: rgba(197,148,197,1) !important; border-color: rgba(197,148,197,1) !important;} x-screen a{color: #fac863; !important} x-screen a.hover{text-decoration: none;}`,
+    termCSS: `x-row{line-height: 1;} .unicode-node{font-size: 10px; padding: 2px 0;} .cursor-node[style]{background-color: rgba(197,148,197,1) !important; border-color: rgba(197,148,197,1) !important;} x-screen a{color: #fac863; !important} x-screen a.hover{text-decoration: none;}`,
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
