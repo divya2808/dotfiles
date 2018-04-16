@@ -29,12 +29,6 @@ module.exports = {
     // border color (window, tabs)
     borderColor: "#5fb3b3",
 
-    // hyperBorder (Does work in 2.0): {
-    //   borderColors: ["#5fb3b3"],
-    //   blurredColors: ["#c594c5", "#6699cc", "#5fb3b3", "#99c794"],
-    //   borderWidth: "2px"
-    // },
-
     // Clicking on them Links
     hyperlinks: {
       clickAction: "open",
@@ -42,7 +36,7 @@ module.exports = {
     },
 
     // custom css to embed in the main window
-    css: `li.tab-active{border-bottom: 1px solid #fac863 !important} .hyper_main{border-width: 2px !important;}`,
+    css: `li.tab-active{border-bottom: 1px solid #fac863 !important} .hyper_main{border-width: 2px;}`,
 
     // set to `false` if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
@@ -109,7 +103,6 @@ module.exports = {
     "hyperterm-oceanic-next",
     "hyperterm-paste",
     "hyperline",
-    "hyperborder",
   ],
 
   // in development, you can create a directory under
