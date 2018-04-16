@@ -10,7 +10,7 @@ module.exports = {
     fontFamily: '"Operator Mono", "Inconsolata for Powerline", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: "rgba(197,148,197,1)",
+    cursorColor: "rgba(197,148,197,.8)",
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: "BLOCK",
@@ -36,12 +36,7 @@ module.exports = {
     },
 
     // custom css to embed in the main window
-    css: `li.tab-active{border-bottom: 1px solid #fac863 !important} .hyper_main{border-width: 2px;}`,
-
-    // set to `false` if you want to hide the minimize, maximize and close buttons
-    // additionally, set to `'left'` if you want them on the left, like in Ubuntu
-    // default: `true` on windows and Linux (ignored on macOS)
-    showWindowControls: "",
+    css: `li.tab-active{border-bottom: 1px solid #fac863 !important} .hyper_main{border-width: 2px !important;}`,
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: "12px 14px",
@@ -69,18 +64,11 @@ module.exports = {
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
-    // make sure to use a full path if the binary name doesn't work
-    // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
-    // if you're using powershell, make sure to remove the `--login` below
     shell: "/bin/zsh",
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
     shellArgs: ["--login"],
-
-    // for environment variables
-    env: {},
 
     // set to false for no bell
     bell: "SOUND",
@@ -90,11 +78,6 @@ module.exports = {
   },
 
   // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
   plugins: [
     "hyperterm-lastpass",
     "hypercwd",
