@@ -1,16 +1,16 @@
-// Future versions of Hyper may add additional config options,
-// which will not automatically be merged into this file.
-// See https://hyper.is#cfg for all currently supported options.
 module.exports = {
   config: {
+    // The update channel to receive updates from
+    updateChannel: 'stable',
+
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 16,
 
     // font family with optional fallbacks
     fontFamily: '"Operator Mono", "Inconsolata for Powerline", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: "rgba(197,148,197,0.8)",
+    cursorColor: "rgba(197,148,197,1)",
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: "BLOCK",
@@ -18,21 +18,22 @@ module.exports = {
     // set to true for blinking cursor
     cursorBlink: false,
 
+    // The text color under BLOCK cursor
+    cursorAccentColor: "#d8dee9",
+
     // color of the text
     foregroundColor: "#d8dee9",
 
-    // terminal background color
-    backgroundColor: "#0f1c23",
+    backgroundColor: "#1b2b34",
 
     // border color (window, tabs)
     borderColor: "#5fb3b3",
 
-    // hyperborder colors  - More standard - '#ec5f67', '#f99157', '#fac863'
-    hyperBorder: {
-      borderColors: ["#5fb3b3"],
-      blurredColors: ["#c594c5", "#6699cc", "#5fb3b3", "#99c794"],
-      borderWidth: "2px"
-    },
+    // hyperBorder (Does work in 2.0): {
+    //   borderColors: ["#5fb3b3"],
+    //   blurredColors: ["#c594c5", "#6699cc", "#5fb3b3", "#99c794"],
+    //   borderWidth: "2px"
+    // },
 
     // Clicking on them Links
     hyperlinks: {
@@ -41,14 +42,7 @@ module.exports = {
     },
 
     // custom css to embed in the main window
-    css: `li.tab-active{border-bottom: 1px solid #fac863 !important}`,
-
-    // custom css to embed in the terminal window
-    termCSS: `x-row{line-height: 1;} .unicode-node{font-size: 10px; padding: 2px 0;} .cursor-node[style]{background-color: rgba(197,148,197,1) !important; border-color: rgba(197,148,197,1) !important;} x-screen a{color: #fac863; !important} x-screen a.hover{text-decoration: none;}`,
-
-    // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
-    // default: `false` on Linux, `true` on Windows (ignored on macOS)
-    showHamburgerMenu: "",
+    css: `li.tab-active{border-bottom: 1px solid #fac863 !important} .hyper_main{border-width: 2px !important;}`,
 
     // set to `false` if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
@@ -99,15 +93,6 @@ module.exports = {
 
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false
-
-    // if true, on right click selected text will be copied or pasted if no
-    // selection is present (true by default on Windows)
-    // quickEdit: true
-
-    // URL to custom bell
-    // bellSoundURL: 'http://example.com/bell.mp3',
-
-    // for advanced config flags please refer to https://hyper.is/#cfg
   },
 
   // a list of plugins to fetch and install from npm
@@ -117,14 +102,14 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyperterm-oceanic-next",
-    "hyperborder",
     "hyperterm-lastpass",
     "hypercwd",
     "hyperlinks",
     "hyper-alt-click",
+    "hyperterm-oceanic-next",
     "hyperterm-paste",
-    "hyper-confirm"
+    "hyperline",
+    "hyperborder",
   ],
 
   // in development, you can create a directory under
