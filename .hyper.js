@@ -84,7 +84,7 @@ module.exports = {
     "hypercwd",
     "hyperlinks",
     "hyper-alt-click",
-    "hyperterm-oceanic-next",
+    //"hyperterm-oceanic-next",
     "hyperterm-paste",
     "hyperline",
   ],
