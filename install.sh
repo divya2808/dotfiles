@@ -15,4 +15,4 @@ ln -sf "$DOTFILES_DIR/.gitconfig-wwt" ~
 ln -sf "$DOTFILES_DIR/.gitignore_global" ~
 ln -sf "$DOTFILES_DIR/.hyper.js" ~
 ln -sf "$DOTFILES_DIR/.zshrc" ~
-ln -sf "$DOTFILES_DIR/.z.sh" ~
+ln -sf "$DOTFILES_DIR/z.sh" ~
