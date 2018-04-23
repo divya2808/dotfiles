@@ -1,9 +1,14 @@
 #!/bin/bash
 
+# # if they have a .config/fish, kill it
+# echo "Installing Oh My ZSH"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Get dotfiles installation directory
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ln -sf "$DOTFILES_DIR/.aliases" ~
+ln -sf "$DOTFILES_DIR/Brewfile" ~
 ln -sf "$DOTFILES_DIR/.gitconfig" ~
 ln -sf "$DOTFILES_DIR/.gitconfig-dl" ~
 ln -sf "$DOTFILES_DIR/.gitconfig-wwt" ~
