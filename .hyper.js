@@ -87,6 +87,7 @@ module.exports = {
     //"hyperterm-oceanic-next",
     "hyperterm-paste",
     "hyperline",
+    "hyper-dark-scrollbar",
   ],
 
   // in development, you can create a directory under
