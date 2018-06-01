@@ -1,0 +1,93 @@
+{
+  "color-highlight.markerType": "underline",
+  "color-highlight.markRuler": false,
+  "editor.colorDecorators": false,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 22,
+  "editor.fontFamily": "Operator Mono, Menlo, monospace",
+  "editor.fontSize": 15,
+  "editor.fontWeight": "300",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.matchBrackets": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.decorations.colors": false,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [
+    110
+  ],
+  "editor.snippetSuggestions": "top",
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 110,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+  },
+  "editor.tabSize": 2,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  // "emmet.includeLanguages": {
+  //   "javascript": "javascriptreact"
+  // },
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "autoFix": true,
+      "language": "javascript"
+    },
+    {
+      "autoFix": true,
+      "language": "javascriptreact"
+    },
+    {
+      "autoFix": true,
+      "language": "html"
+    },
+    {
+      "autoFix": true,
+      "language": "vue"
+    }
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": false,
+  "files.associations": {
+    "*.html": "html"
+  },
+  "files.exclude": {
+    "**/.git": false
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.enableSmartCommit": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "material-icon-theme.showUpdateMessage": false,
+  "terminal.integrated.fontFamily": "Inconsolata for Powerline",
+  "terminal.integrated.fontSize": 14,
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Cobalt Next",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  // "editor.tokenColorCustomizations": {
+  //   "[Cobalt Next]": {
+  //     "comments": "#229977"
+  //   }
+  // },
+}
