@@ -11,7 +11,7 @@ for (let i = 1; i < sessions.length; i++) {
       video = document.getElementById('vjs_video_3_html5_api').getAttribute('src');
       let active = document.querySelector('.session-item.active');
       let title = active.querySelector('.session-item-title').innerHTML;
-      title = title.replace(/\s+/g, '-');
+      title = title.replace(/[^A-Z0-9]+/ig, '_');
       courseList.push({
         title: title,
         link: video,
@@ -32,7 +32,7 @@ function saveText(text, filename) {
 
 // give me that data in a json object!
 courseList = JSON.stringify(courseList)
-courseTitle = courseTitle.replace(/\s+/g, '-');
+courseTitle = courseTitle.replace(/[^A-Z0-9]+/ig, '_');
 saveText(courseList, courseTitle);
 
 // Not Needed as of now...
