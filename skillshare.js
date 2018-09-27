@@ -20,6 +20,8 @@ for (let i = 1; i < sessions.length; i++) {
   }, i * 3000);
 }
 
+
+// STEP TWO
 // download function
 function saveText(text, filename) {
   var a = document.createElement('a');
@@ -27,38 +29,39 @@ function saveText(text, filename) {
   a.setAttribute('download', filename);
   a.click()
 }
-
-// STEP TWO
 
 // give me that data in a json object!
 courseList = JSON.stringify(courseList)
 courseTitle = courseTitle.replace(/[^A-Z0-9]+/ig, '_');
 saveText(courseList, courseTitle);
 
-// Not Needed as of now...
-// get me of all of the data!
-let course = sessions.map(session => {
-  session.click();
-  let active = document.querySelector('.session-item.active');
-  let title = active.querySelector('.session-item-title').innerHTML;
-  const fullLink = video.getAttribute('src');
-  const link = fullLink.split('?');
-  title = title.replace(/\s+/g, '-');
-  return {
-    title: title,
-    link: link[0],
-  }
-});
 
-// download function
-function saveText(text, filename) {
-  var a = document.createElement('a');
-  a.setAttribute('href', 'data:text/plain;charset=utf-u,' + encodeURIComponent(text));
-  a.setAttribute('download', filename);
-  a.click()
-}
 
-// give me that data in a json object!
-course = JSON.stringify(course)
-courseTitle = courseTitle.replace(/\s+/g, '-');
-saveText(course, courseTitle);
+// Old
+// // Not Needed as of now...
+// // get me of all of the data!
+// let course = sessions.map(session => {
+//   session.click();
+//   let active = document.querySelector('.session-item.active');
+//   let title = active.querySelector('.session-item-title').innerHTML;
+//   const fullLink = video.getAttribute('src');
+//   const link = fullLink.split('?');
+//   title = title.replace(/\s+/g, '-');
+//   return {
+//     title: title,
+//     link: link[0],
+//   }
+// });
+
+// // download function
+// function saveText(text, filename) {
+//   var a = document.createElement('a');
+//   a.setAttribute('href', 'data:text/plain;charset=utf-u,' + encodeURIComponent(text));
+//   a.setAttribute('download', filename);
+//   a.click()
+// }
+
+// // give me that data in a json object!
+// course = JSON.stringify(course)
+// courseTitle = courseTitle.replace(/\s+/g, '-');
+// saveText(course, courseTitle);
