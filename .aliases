@@ -45,6 +45,9 @@ alias gopen="open_git_repo_online"
 # NPM
 alias ni="npm install"
 alias nr="npm run"
+alias yi="yarn install"
+alias ya="yarn add"
+alias yr="yarn run"
 alias use_npm="npm set registry https://registry.npmjs.org/ && npm get registry"
 alias use_wwt="npm set registry https://npm.wwt.com/ && npm get registry"
 
@@ -56,6 +59,7 @@ alias weather="curl wttr.in"
 
 # VS Code
 alias vsc="code ."
+alias co="code ."
 
 #zsh
 alias reload="source ~/.zshrc"
