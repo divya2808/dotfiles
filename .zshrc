@@ -86,3 +86,6 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Get (mostly git) Functions
+source $HOME/.functions

@@ -8,6 +8,7 @@
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ln -sf "$DOTFILES_DIR/.aliases" ~
+ln -sf "$DOTFILES_DIR/.functions" ~
 ln -sf "$DOTFILES_DIR/Brewfile" ~
 ln -sf "$DOTFILES_DIR/.gitconfig" ~
 ln -sf "$DOTFILES_DIR/.gitconfig-dl" ~
