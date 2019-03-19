@@ -28,6 +28,11 @@ function publish_current_branch() {
   git push --set-upstream origin $current_branch:$current_branch
 }
 
+function pull_origin_current_branch() {
+  local current_branch="$(git_current_branch)"
+  git pull origin $current_branch
+}
+
 function delete_local_merged_branches() {
   git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d
 }
