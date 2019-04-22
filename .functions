@@ -42,3 +42,8 @@ function delete_remote_merged_branches() {
   git remote prune origin
   git branch -r --merged origin/master | awk -F'/' '/^ *origin/{if(!match($0, /(>|master)/)){print $2}}' | xargs git push origin --delete
 }
+
+# Mac stuff
+function mkcd() {
+  mkdir -p "$1" && cd "$1";
+}
