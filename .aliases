@@ -15,6 +15,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+alias c-c="convert-color"
 
 # Git
 alias g="git"
