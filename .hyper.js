@@ -35,7 +35,7 @@ module.exports = {
     },
 
     // custom css to embed in the main window
-    css: `li.tab-active{border-bottom: 1px solid #fac863 !important} .hyper_main{border-width: 2px !important;}`,
+    css: `.hyper_main{border-width: 2px !important;}`,
 
     // The text color under BLOCK cursor
     cursorAccentColor: "#d8dee9",
@@ -44,7 +44,7 @@ module.exports = {
     cursorBlink: false,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: "rgba(197,148,197,.8)",
+    cursorColor: "rgba(197,148,197,1)",
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: "BLOCK",
@@ -76,12 +76,13 @@ module.exports = {
 
     // The update channel to receive updates from
     updateChannel: 'stable',
+    webGLRenderer: false,
   },
 
   // a list of plugins to fetch and install from npm
   plugins: [
     "hyperterm-lastpass",
-    "hypercwd",
+    // "hypercwd",
     "hyperlinks",
     "hyper-alt-click",
     //"hyperterm-oceanic-next",
