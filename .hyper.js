@@ -82,7 +82,7 @@ module.exports = {
   // a list of plugins to fetch and install from npm
   plugins: [
     "hyperterm-lastpass",
-    // "hypercwd",
+    "hypercwd",
     "hyperlinks",
     "hyper-alt-click",
     //"hyperterm-oceanic-next",
