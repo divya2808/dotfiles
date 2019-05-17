@@ -43,6 +43,11 @@ function delete_remote_merged_branches() {
   git branch -r --merged origin/master | awk -F'/' '/^ *origin/{if(!match($0, /(>|master)/)){print $2}}' | xargs git push origin --delete
 }
 
+# get current IP address
+function getip() {
+  node ~/local-git/dotfiles/scripts/getIp.js
+}
+
 # Mac stuff
 function mkcd() {
   mkdir -p "$1" && cd "$1";

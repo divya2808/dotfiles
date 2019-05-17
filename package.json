@@ -1,0 +1,22 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "my dotfiles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidleininger/dotfiles.git"
+  },
+  "author": "davidleininger",
+  "bugs": {
+    "url": "https://github.com/davidleininger/dotfiles/issues"
+  },
+  "homepage": "https://github.com/davidleininger/dotfiles#readme",
+  "dependencies": {
+    "boxen": "^1.2.2",
+    "chalk": "^2.3.0",
+    "clipboardy": "^1.2.2",
+    "internal-ip": "^1.2.0",
+    "is-git-repository": "^1.1.1",
+    "open": "^6.3.0"
+  }
+}
