@@ -52,3 +52,13 @@ function getip() {
 function mkcd() {
   mkdir -p "$1" && cd "$1";
 }
+
+# I hate remembering syntax for copying to clipboard
+function copy() {
+  pbcopy < $1; echo "$(tput setaf 2)Contents of $(tput setaf 5)${1} $(tput setaf 2)copied to clipboard!"
+}
+
+# empty the trash
+function dump() {
+  node ~/local-git/dotfiles/scripts/emptyTrash.js
+}
