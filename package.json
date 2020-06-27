@@ -4,13 +4,13 @@
   "description": "my dotfiles",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidleininger/dotfiles.git"
+    "url": "git+https://github.com/divya2808/dotfiles.git"
   },
   "author": "davidleininger",
   "bugs": {
-    "url": "https://github.com/davidleininger/dotfiles/issues"
+    "url": "https://github.com/divya2808/dotfiles/issues"
   },
-  "homepage": "https://github.com/davidleininger/dotfiles#readme",
+  "homepage": "https://github.com/divya2808/dotfiles#readme",
   "dependencies": {
     "boxen": "^1.2.2",
     "chalk": "^2.3.0",
